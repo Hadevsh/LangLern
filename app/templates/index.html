@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LangLern{% endblock %}</title>
+    
+    <!-- Shared CSS (e.g., nav styling) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    
+    <!-- Page specific CSS -->
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main.index') }}">Home</a></li>
+            <li><a href="{{ url_for('main.index') }}">Lern</a></li>
+            <li><a href="{{ url_for('main.index') }}">Progress</a></li>
+            <li><a href="{{ url_for('main.index') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page specific body -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Shared JavaScript -->
+    <script src="global.js"></script>
+    <!-- Page specific JavaScript -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

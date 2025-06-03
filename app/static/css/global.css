@@ -1,0 +1,65 @@
+:root {
+    --background: #121212;        /* Main page background */
+    --surface: #1E1E1E;           /* Cards, nav, content containers */
+    --primary: #1abc9c;           /* Accent color for buttons/links */
+    --primary-variant: #16a085;   /* Hover states, borders */
+    --text: #e0e0e0;              /* Default text color */
+    --text-muted: #a0a0a0;        /* Secondary/inactive text */
+}
+
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text);
+    padding-top: 3rem; /* Space for nav */
+}
+
+/* Navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--surface);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(112, 112, 112, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* Main content wrapper */
+main {
+    padding: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
