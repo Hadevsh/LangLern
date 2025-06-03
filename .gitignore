@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Flask instance folder
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+*.env
+.env.*
+
+# Flask SQLite database (if used)
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Pytest / coverage / test artifacts
+.cache/
+coverage.*
+.tox/
+nosetests.xml
+test-results/
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# macOS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node modules (if any frontend tooling used)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.~ 
