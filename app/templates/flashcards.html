@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block title %}Flashcards — LangLern{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flashcards.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>Flashcards</h1>
+<div class="flashcard-container">
+    {% for card in flashcards %}
+    <div class="flashcard">
+        <div class="front">
+            {{ card.front }}
+        </div>
+        <div class="back">
+            {{ card.back }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/flashcards.js') }}"></script>
+{% endblock %}
