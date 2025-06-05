@@ -56,3 +56,5 @@ build/
 *.bak
 *.tmp
 *.~ 
+
+assets/images/psd/
