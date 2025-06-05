@@ -36,8 +36,9 @@ nav {
     z-index: 1000;
 }
 
-.title {
-    font-size: 1.5rem;
+.logo {
+    width: 5.5rem;
+    height: auto;
     font-weight: 600;
 }
 
@@ -45,12 +46,13 @@ nav ul {
     display: flex;
     list-style: none;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 4rem;
 }
 
 nav a {
     color: var(--text);
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.2s;
 }
