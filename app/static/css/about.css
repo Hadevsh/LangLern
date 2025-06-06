@@ -4,7 +4,7 @@ section {
 
 .hero {
     background: linear-gradient(to right, var(--primary), var(--secondary));
-    height: 70vh;
+    height: calc(100vh - 6rem); /* 3rem nav + 3rem footer */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ section {
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .hero p {
@@ -37,7 +37,7 @@ section {
 }
 
 .feature {
-    /* background: linear-gradient(45deg, var(--primary), var(--secondary)); */
+    cursor: pointer;
     border: 1px solid var(--primary-variant);
     padding: 2rem;
     border-radius: 1rem;
@@ -51,6 +51,7 @@ section {
 .feature i {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--primary);
 }
 
 .screenshots {
@@ -59,6 +60,7 @@ section {
 }
 
 .screenshots img {
+    cursor: pointer;
     width: 100%;
     max-width: 30rem;
     border-radius: 1rem;
@@ -87,10 +89,10 @@ section {
 }
 
 .cta button {
-    background: #3b82f6;
+    background: var(--primary);
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     font-size: 1rem;
     cursor: pointer;
@@ -98,5 +100,5 @@ section {
 }
 
 .cta button:hover {
-    background: #2563eb;
+    background: var(--primary-variant);
 }
