@@ -10,6 +10,7 @@
 
     <!-- Shared CSS (e.g., nav styling) -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     
     <!-- Page specific CSS -->
     {% block head %}{% endblock %}
@@ -21,7 +22,7 @@
             <li><a href="{{ url_for('main.index') }}">Lern</a></li>
             <li><a href="{{ url_for('main.flashcards') }}">Flashcards</a></li>
             <li><a href="{{ url_for('main.index') }}">Progress</a></li>
-            <li><a href="{{ url_for('main.index') }}">About</a></li>
+            <li><a href="{{ url_for('main.about') }}">About</a></li>
         </ul>
     </nav>
 

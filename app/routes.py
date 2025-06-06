@@ -31,3 +31,7 @@ def flashcards():
         {'front': 'Tot ziens', 'back': 'Goodbye'}
     ]
     return render_template('flashcards.html', flashcards=sample_flashcards)
+
+@main.route("/about")
+def about():
+    return render_template("about.html")

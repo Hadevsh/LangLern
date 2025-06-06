@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+
+{% block title %}About — LangLern{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to Lang Lern</h1>
+    <p>Master languages faster, smarter, and with more fun than ever before.</p>
+</section>
+
+<section class="features">
+    <h2>Why Lang Lern?</h2>
+    <p>Built for learners, designed by polyglots.</p>
+    <div class="feature-grid">
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Immersive Practice</h3>
+            <p>Learn through real-world conversations and cultural immersion.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-book-open"></i>
+            <h3>Smart Curriculum</h3>
+            <p>AI-personalized lessons that grow with your skills.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h3>Community Support</h3>
+            <p>Connect with fellow learners and native speakers.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <h3>Track Progress</h3>
+            <p>Visualize your growth with our smart dashboards.</p>
+        </div>
+    </div>
+</section>
+
+<section class="screenshots">
+    <h2>See Lang Lern in Action</h2>
+    <p>Screenshots and demos that show the magic.</p>
+    <div>
+        <img src="{{ url_for('static', filename='assets/iamges/screenshot1.png') }}" alt="Screenshot 1">
+        <img src="{{ url_for('static', filename='assets/iamges/screenshot2.png') }}" alt="Screenshot 2">
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to start your language journey?</h2>
+    <p>Join Lang Lern and explore the world of languages like never before.</p>
+    <button>Get Started</button>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+{% endblock %}

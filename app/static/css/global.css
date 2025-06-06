@@ -5,6 +5,8 @@
     --surface: #1E1E1E;           /* Cards, nav, content containers */
     --primary: #1abc9c;           /* Accent color for buttons/links */
     --primary-variant: #16a085;   /* Hover states, borders */
+    --secondary: #c4b5fd;
+    --secondary-variant: #ad8ce2;
     --text: #e0e0e0;              /* Default text color */
     --text-muted: #a0a0a0;        /* Secondary/inactive text */
 }
@@ -69,11 +71,6 @@ nav a {
     font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.2s, font-weight 0.3s;
-}
-
-/* Main content wrapper */
-main {
-    padding: 2rem;
 }
 
 /* Footer styling */

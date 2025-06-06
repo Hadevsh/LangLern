@@ -1,0 +1,102 @@
+section {
+    padding: 4rem 1rem;
+}
+
+.hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    /* background: linear-gradient(45deg, var(--primary), var(--secondary)); */
+    border: 1px solid var(--primary-variant);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.03);
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.screenshots {
+    background: var(--surface);
+    text-align: center;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+}
+
+.cta {
+    background: linear-gradient(to right, var(--secondary-variant), var(--primary-variant));
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta button:hover {
+    background: #2563eb;
+}
