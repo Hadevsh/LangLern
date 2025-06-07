@@ -1,3 +1,11 @@
+.title {
+  font-size: 5rem;
+  background: -webkit-linear-gradient(45deg, var(--primary) 20%, var(--secondary-variant) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .flashcard-container {
     display: flex;
     flex-wrap: wrap;

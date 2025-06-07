@@ -7,6 +7,8 @@
     --primary-variant: #16a085;   /* Hover states, borders */
     --secondary: #c4b5fd;
     --secondary-variant: #ad8ce2;
+    --primary-variation: #f5c766;
+    --secondary-variation: #8ccee2;
     --text: #e0e0e0;              /* Default text color */
     --text-muted: #a0a0a0;        /* Secondary/inactive text */
 }
@@ -16,6 +18,9 @@ main {
     overflow-y: auto;
     scroll-behavior: smooth;
     height: calc(100vh - 6rem); /* 6rem nav */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Reset & base styles */
@@ -120,9 +125,9 @@ footer img {
 }
 
 /* Responsive tweaks */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
         align-items: flex-start;
     }
-}
+} */
