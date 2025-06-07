@@ -1,6 +1,6 @@
 .title {
   font-size: 5rem;
-  background: -webkit-linear-gradient(45deg, var(--primary) 20%, var(--secondary-variant) 70%);
+  background: -webkit-linear-gradient(45deg, var(--primary-variation) 20%, var(--secondary-variant) 70%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 .flashcard {
@@ -29,11 +29,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--primary-variant);
-    border-radius: 8px;
+    background-color: var(--surface);
+    border: 2px solid transparent;
+    background: linear-gradient(var(--surface), var(--surface)) padding-box,
+                linear-gradient(45deg, var(--secondary-variation), var(--primary-variant)) border-box;
+    border-radius: 1rem;
     font-size: 1.2em;
     transition: transform 0.6s;
-    background-color: var(--surface);
+    
 }
 
 .flashcard .back {

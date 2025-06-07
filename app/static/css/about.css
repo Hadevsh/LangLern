@@ -74,7 +74,7 @@ section {
 }
 
 .cta {
-    background: linear-gradient(to right, var(--secondary-variant), var(--primary-variant));
+    background: linear-gradient(to right, var(--primary-variation), var(--secondary-variation));
     text-align: center;
 }
 
