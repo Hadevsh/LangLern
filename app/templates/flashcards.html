@@ -7,18 +7,22 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="title">Flashcards</h1>
 <div class="flashcard-container">
-    {% for card in flashcards %}
-    <div class="flashcard">
-        <div class="front">
-            {{ card.front }}
+    <h1 class="title">Flashcards</h1>
+    <h2 class="lang">Dutch</h2> <!-- Placeholder -->
+
+    <div class="three-flashcards">
+        {% for card in flashcards %}
+        <div class="flashcard">
+            <div class="front">
+                {{ card.front }}
+            </div>
+            <div class="back">
+                {{ card.back }}
+            </div>
         </div>
-        <div class="back">
-            {{ card.back }}
-        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endblock %}
 
