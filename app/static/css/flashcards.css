@@ -45,12 +45,18 @@
     width: 15rem;
 }
 
-.translated {
+#translated {
+    align-content: center;
+    font-weight: 600;
     height: 3rem;
     bottom: 0;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     background: linear-gradient(45deg, var(--secondary), var(--primary));
+}
+
+#submit {
+    margin-top: 1rem;
 }
 
 .flashcard .front, .flashcard .back {
