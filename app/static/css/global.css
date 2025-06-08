@@ -19,8 +19,6 @@ main {
     scroll-behavior: smooth;
     height: calc(100vh - 6rem); /* 6rem nav */
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Reset & base styles */
@@ -73,6 +71,7 @@ input {
     border-radius: 1rem;
     padding: 0.8rem;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 /* Navbar styling */
