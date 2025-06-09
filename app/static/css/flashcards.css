@@ -50,11 +50,14 @@
     text-align: left;
     padding: 1rem 1.5rem;
     font-weight: 600;
-    /* height: 3rem; */
     bottom: 0;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     background: linear-gradient(45deg, var(--secondary), var(--primary));
+}
+
+#flashcards {
+    margin-top: 2rem;
 }
 
 #submit {

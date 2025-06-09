@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             resultDiv.innerHTML = `Error: ${data.error}`;
         }
+
+        const flascardsDiv = document.getElementById("flashcards");
+        let flashcard = document.createElement("div");
+        flashcard.className = "flashcard";
+        flashcard.innerHTML = `
+            <div class="front">
+                ${data.translation}
+            </div>
+            <div class="back">
+                ${word}
+            </div>`;
+        flascardsDiv.appendChild(flashcard);
     });
 });
 
