@@ -19,7 +19,7 @@
     height: calc(100vh - 6rem); /* 6 rem for nav */
 }
 
-.three-flashcards {
+.flashcards {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
