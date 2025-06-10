@@ -24,18 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             resultDiv.innerHTML = `Error: ${data.error}`;
         }
+    });
 
-        const flascardsDiv = document.getElementById("flashcards");
-        let flashcard = document.createElement("div");
-        flashcard.className = "flashcard";
-        flashcard.innerHTML = `
-            <div class="front">
-                ${data.translation}
-            </div>
-            <div class="back">
-                ${word}
-            </div>`;
-        flascardsDiv.appendChild(flashcard);
+    document.getElementById("add-to-list").addEventListener("click", () => {
+        const resultDivData = document.getElementById("translated").innerHTML;
+        if (resultDivData !== "" || resultDivData !== " ") {
+            const flascardsDiv = document.getElementById("flashcards");
+            let flashcard = document.createElement("div");
+            flashcard.className = "flashcard";
+            flashcard.innerHTML = `
+                <div class="front">
+                    ${resultDivData}
+                </div>
+                <div class="back">
+                    ${document.getElementById("word-input").value.trim()}
+                </div>`;
+            flascardsDiv.appendChild(flashcard);
+        }
     });
 });
 
