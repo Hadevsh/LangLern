@@ -45,6 +45,11 @@
     width: 15rem;
 }
 
+.add-flashcard #add {
+    justify-content: center;
+    align-items: center;
+}
+
 #translated {
     align-content: center;
     text-align: left;
@@ -75,7 +80,9 @@
     background-color: var(--surface);
     border: 2px solid transparent;
     background: linear-gradient(var(--surface), var(--surface)) padding-box,
-                linear-gradient(45deg, var(--secondary-variation), var(--primary-variant)) border-box;
+                linear-gradient(45deg, var(--text), var(--text)) border-box;
+    /* background: linear-gradient(var(--surface), var(--surface)) padding-box,
+                linear-gradient(45deg, var(--secondary-variation), var(--primary-variant)) border-box; */
     border-radius: 1rem;
     font-size: 1.2em;
     transition: transform 0.6s;
