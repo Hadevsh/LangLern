@@ -1,5 +1,5 @@
 section {
-    padding: 4rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 .hero {
@@ -38,7 +38,7 @@ section {
 
 .feature {
     cursor: pointer;
-    border: 1px solid var(--primary-variant);
+    border: 2px solid var(--primary-variant);
     padding: 2rem;
     border-radius: 1rem;
     transition: transform 0.3s ease;
